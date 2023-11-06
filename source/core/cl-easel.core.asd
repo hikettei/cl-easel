@@ -10,5 +10,6 @@
   ((:file "package")
    (:file "easel")
    (:file "drawline")
+   (:file "curve")
    ))
 

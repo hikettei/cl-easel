@@ -15,5 +15,7 @@
    #:easel-height
    #:easel-frame
    #:with-fixed-time
-   ))
+   )
+  (:export
+   #:curve-text))
 

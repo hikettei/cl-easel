@@ -5,6 +5,8 @@
   `(unsigned-byte 16))
 
 ;; [TODO] Adjustable Size depending on elements displayed
+;; [TODO] Animation
+;; [TODO] Color
 (defclass Easel ()
   ((t-size  :initarg :t :initform 1 :type frame-size-t :reader    easel-t)
 
