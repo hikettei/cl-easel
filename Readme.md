@@ -25,7 +25,9 @@ A Common Lisp library dedicated to render 2d objects on terminal.
       (draw-histgram-helper 8 6))
     (realize x)
     (print x)))
-    
+```
+
+```
 ┌───────────────┐
 │               │
 │   ┌┐          │
@@ -35,4 +37,4 @@ A Common Lisp library dedicated to render 2d objects on terminal.
 ├───┴┴─┴┴──┴┴───┤
 │               │
 └───────────────┘
-``
+```
