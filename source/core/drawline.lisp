@@ -1,10 +1,6 @@
 
 (in-package :cl-easel.core)
 
-#|
-
-|#
-
 ;; Ref: https://github.com/xyzzy-022/xyzzy-unicode/blob/master/xyzzy/lisp/cnamedef.l
 ;; Ref: https://en.wikipedia.org/wiki/Box-drawing_character
 (eval-when (:compile-toplevel :load-toplevel :execute)
@@ -37,6 +33,8 @@
 
   (defun maybe-to-material (value)
     (or (gethash value *materials->keyword*) value)))
+
+;; [TODO] with-table-style
 
 (defun make-material+ (easel)
   (with-slots ((width width) (height height) (now now) (frame frame)) easel

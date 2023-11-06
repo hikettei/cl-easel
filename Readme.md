@@ -43,3 +43,14 @@ A Common Lisp library dedicated to render 2d objects on terminal.
 │   A   B   C    │
 └────────────────┘
 ```
+
+## Features (TODO)
+
+- Highest Performance achieved by using Petalisp as a backend.
+
+- Scientific Plotting for REPL (inspired in [UnicodePlots.jl](https://github.com/JuliaPlots/UnicodePlots.jl))
+
+- GNUPlot and cl-easel Interop
+
+- Making the appearance of Common Lisp displayed on terminal much more elegant from the root!
+
