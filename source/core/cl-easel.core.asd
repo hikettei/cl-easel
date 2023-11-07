@@ -8,6 +8,7 @@
   :serial t
   :components
   ((:file "package")
+   (:file "utils")
    (:file "easel")
    (:file "drawline")
    (:file "carve")

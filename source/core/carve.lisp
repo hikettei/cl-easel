@@ -5,12 +5,8 @@
   ""
   (declare (type easel easel)
 	   (type string sentence))
-  (let* ((from-height (if (< from-height 0)
-			  (+ from-height (easel-height easel))
-			  from-height))
-	 (from-width  (if (< from-width 0)
-			  (+ from-width (easel-width easel))
-			  from-width))
+  (let* ((from-height (parse-absolute (easel-height easel) from-height))
+	 (from-width  (parse-absolute (easel-width easel)  from-width))
 	 (size (length sentence))
 	 (sentence (lazy-reshape
 		    (lazy-array sentence)

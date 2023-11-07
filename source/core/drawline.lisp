@@ -167,17 +167,12 @@
     (lazy-array actual-frame)))
 
 (defun draw-horizontal! (easel index &optional (from 0) (to (easel-width easel)))
+  "TODO: DOCS"
   (declare (easel easel))
   
-  (let ((index (if (< index 0)
-		   (+ index (easel-height easel))
-		   index))
-	(to    (if (< to 0)
-		   (+ to (easel-height easel))
-		   to))
-	(from  (if (< from 0)
-		   (+ from (easel-height easel))
-		   from)))
+  (let ((index (parse-absolute (easel-height easel) index))
+	(from  (parse-absolute (easel-width  easel) from))
+	(to    (parse-absolute (easel-width  easel) to)))
     (symbol-macrolet ((frame (easel-frame easel)))
       (setf frame
 	    (lazy
@@ -202,16 +197,11 @@
       (setf frame (clean-up-crossing-points easel frame)))))
 
 (defun draw-vertical! (easel index &optional (from 0) (to (easel-height easel)))
+  "TODO: DOCS"
   (declare (easel easel))
-  (let ((index (if (< index 0)
-		   (+ index (easel-width easel))
-		   index))
-	(to    (if (< to 0)
-		   (+ to (easel-width easel))
-		   to))
-	(from  (if (< from 0)
-		   (+ from (easel-width easel))
-		   from)))
+  (let ((index (parse-absolute (easel-width easel) index))
+	(from  (parse-absolute (easel-height easel) from))
+	(to    (parse-absolute (easel-height easel) to)))
     (symbol-macrolet ((frame (easel-frame easel)))
       (setf frame
 	    (lazy
