@@ -15,7 +15,12 @@
    #:easel-height
    #:easel-frame
    #:with-fixed-time
+   #:width
+   #:height
+   #:frame
    )
   (:export
-   #:carve-text))
+   #:carve-text
+   #:draw-vertical!
+   #:draw-horizontal!))
 

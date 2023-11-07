@@ -2,7 +2,7 @@
 (cl:in-package :cl-user)
 
 (defpackage :cl-easel.canvas
-  (:use :cl)
+  (:use :cl :petalisp :cl-easel.core)
   (:export
 
    ))

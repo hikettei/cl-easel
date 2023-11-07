@@ -2,9 +2,8 @@
 (in-package :cl-easel.core)
 
 (defun carve-text (easel sentence &optional (from-height 0) (from-width 0) (direction :horizontal))
-  ""
-  (declare (type easel easel)
-	   (type string sentence))
+  "Carves the given sentence (a type of sequence) into easel."
+  (declare (type easel easel))
   (let* ((from-height (parse-absolute (easel-height easel) from-height))
 	 (from-width  (parse-absolute (easel-width easel)  from-width))
 	 (size (length sentence))
