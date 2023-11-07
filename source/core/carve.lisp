@@ -1,7 +1,7 @@
 
 (in-package :cl-easel.core)
 
-(defun curve-text (easel sentence &optional (from-height 0) (from-width 0) (direction :horizontal))
+(defun carve-text (easel sentence &optional (from-height 0) (from-width 0) (direction :horizontal))
   ""
   (declare (type easel easel)
 	   (type string sentence))

@@ -17,5 +17,5 @@
    #:with-fixed-time
    )
   (:export
-   #:curve-text))
+   #:carve-text))
 

@@ -1,15 +1,14 @@
 
-(asdf:defsystem :cl-easel.core
+(asdf:defsystem :cl-easel.canvas
   :author      "hikettei <ichndm@gmail.com>"
   :depends-on (:petalisp
 	       :trivia
 	       :mgl-pax
-	       :alexandria)
+	       :alexandria
+	       "cl-easel.core")
   :serial t
   :components
   ((:file "package")
-   (:file "easel")
-   (:file "drawline")
-   (:file "carve")
    ))
+
 

@@ -6,5 +6,6 @@
   :licence     ""
   ;; :in-order-to ((test-op
   :depends-on
-  ("cl-easel.core"))
+  ("cl-easel.core"
+   "cl-easel.canvas"))
 
